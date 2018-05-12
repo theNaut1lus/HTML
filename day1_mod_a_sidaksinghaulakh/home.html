@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+<head>
+<<link rel="stylesheet" type="text/css" href="bootstrap-4.1.0-dist\css\bootstrap.min.css">
+<!-- <link rel="stylesheet" type="text/css" href="C:\Users\CL 5\Desktop\bootstrap-4.1.0-dist\css\bootstrap-grid.min.css"> -->
+<script type="text/javascript" src="bootstrap-4.1.0-dist\js\bootstrap.min.js"></script>
+<script type="text/javascript" src="bootstrap-4.1.0-dist\js\bootstrap.bundle.min.js"></script>
+
+	<style type="text/css">
+		.top {
+			width: 100%;
+			display: inline-flex;
+			/*align-items: center;*/
+			/*text-align: center;*/
+		}
+		footer {
+			margin-top: 10px;
+			text-align: center;
+			margin-top: 10px;
+			align-content: center;
+			text-align: center;
+		}
+		.navbar {
+			background-color: cyan;
+			position: sticky;
+		}
+		body {
+			background-color: rgba(115,1,113,0.1);
+			min-width: 400px;
+		}
+		.right-bar {
+			margin-right: 10%;
+			padding-bottom: 5px;
+			padding-top: 10px;
+			margin-bottom: 20px;
+			margin-left: 10px;
+			padding-left: 10px;
+			border-left: 1px solid black;
+			border-top: 1px solid black;
+			width: 50%;
+			box-shadow:  grey;
+		}
+		.left-bar {
+			margin-left: 10%;
+			padding-top: 10px;
+			padding-bottom: 5px;
+			margin-top: 5px;
+			margin-bottom: 20px;
+			display: inline-flex;
+			min-width: 250px;
+			width: 50%;
+			border-right: 1px solid black;
+			border-bottom: 1px solid black;
+			align-items: center;
+			text-align: center;
+			box-shadow: 2px 2px 2px 2px grey;
+		}
+		.alert {
+			display: inline-flex;
+		}
+		.feed {
+			padding: 30px;
+			max-width: 700px;
+			margin: 10px;
+			box-shadow: 2px 2px 2px 2px grey;
+			align-items: center;
+			text-align: center;
+			align-content: center;
+			width: 100%;
+			display: inline-block;
+		}
+		.btn {
+			margin: 2px;
+		}
+		.jumbotron {
+			text-align: center;
+			margin: 5px;
+			width: 100%;
+		}
+		.container {
+			text-align: center;
+		}
+
+	</style>
+
+	<title>Home Page</title>
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
+  <img src="logo.jpg" style="width: 50px ; height: 50px;" class="navbar-brand" href="#">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Home-Page</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="Index.html">Log-Out</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="settings.html">Settings</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+	<div class=" container jumbotron">
+		<h3>Welcome Back User !</h3>
+		<p> Carry On where you left off.</p>
+	</div>
+<div class="top">
+	<div class="left-bar">
+		<div class=" container">
+		<img src="profile.jpg" style="width: 200px; height: 200px;">
+		<br>
+		<strong> Sidak Singh Aulakh </strong>
+		<br>
+		<div class="btn btn-sm alert-primary">
+			<a href="messages.html">Messages</a>
+		</div> <br>
+		<div class="btn btn-sm alert-primary">
+			<a href="notifications.html">Notifications</a>
+		</div> <br>
+		<div class="btn btn-sm alert-success">
+			<a href="settings.html">Settings</a>
+		</div> <br>
+		</div>
+	</div>
+	<div class="right-bar">
+		<h1>ADD: </h1>
+		<div>
+			<p class="alert alert-secondary">
+				<a href="add.html">Add Post</a>
+			</p><br>
+			<p class="alert alert-secondary">
+				<a href="add.html">Add new Image</a>
+			</p><br>
+			<p class="alert alert-secondary">
+				<a href="add.html">Add Music/Song</a>
+			</p><br>
+			<p class="alert alert-secondary">
+				<a href="add.html">Add Video</a>
+			</p>
+	</div>
+</div>
+</div>
+	<div class="container">
+
+		<h1><strong> FEED </strong> </h1>
+
+		<div class="feed">
+			<p class="alert-secondary">
+				Anna upload a new <strong>photo</strong>
+			</p>
+			<img src="feed.jpg">
+			<br>
+			<p>
+				Our trip to the mountains was splendid, we clicked a lots of photos and we hope you were there.
+			</p>
+			<div class="btn btn-group-sm">
+					<button class="btn btn-primary">
+						LIKE
+					</button>
+					<a class="btn btn-warning" href="share.html">
+						SHARE
+					</a>
+					<button class="btn btn-note">
+						COMMENT
+					</button>
+
+			</div>
+
+
+		</div>
+
+		<div class="feed">
+			<p class="alert-secondary">
+				Jason updated his <strong>status</strong>
+			</p>
+
+			<img src="feed.jpg">
+			<br>
+			<p>
+				Our trip to the mountains was splendid, we clicked a lots of photos and we hope you were there.
+			</p>
+			<div class="btn btn-group-sm">
+					<button class="btn  btn-primary">
+						LIKE
+					</button>
+					<a class="btn btn-warning" href="share.html">
+						SHARE
+					</a>
+					<button class="btn btn-note">
+						COMMENT
+					</button>
+
+			</div>
+
+		</div>
+
+		<div class="feed">
+<p class="alert-secondary">
+				Jason updated his <strong>status</strong>
+			</p>
+			<img src="feed.jpg">
+			<br>
+			<p>
+				Our trip to the mountains was splendid, we clicked a lots of photos and we hope you were there.
+			</p>
+			<div class="btn btn-group-sm">
+					<button class="btn btn-primary">
+						<span class="glyphicon glyphicon-heart">LIKE</span>
+					</button>
+					<a class="btn btn-warning" href="share.html">
+						SHARE
+					</a>
+					<button class="btn btn-note">
+						COMMENT
+					</button>
+
+			</div>
+
+		</div>
+
+		<div class="feed">
+<p class="alert-secondary">
+				Anna upload a new <strong>photo</strong>
+			</p>
+			<img src="feed.jpg">
+			<br>
+			<p>
+				Our trip to the mountains was splendid, we clicked a lots of photos and we hope you were there.
+			</p>
+			<div class="btn btn-group-sm">
+					<button class="btn  btn-primary">
+						LIKE
+					</button>
+					<a class="btn btn-warning" href="share.html">
+						SHARE
+					</a>
+					<button class="btn btn-note">
+						COMMENT
+					</button>
+
+			</div>
+
+		</div>
+
+		<div class="feed">
+<p class="alert-secondary">
+				Jason updated his <strong>status</strong>
+			</p>
+			<img src="feed.jpg">
+			<br>
+			<p>
+				Our trip to the mountains was splendid, we clicked a lots of photos and we hope you were there.
+			</p>
+			<div class="btn btn-group-sm">
+					<button class="btn  btn-primary">
+						LIKE
+					</button>
+					<a class="btn btn-warning" href="share.html">
+						SHARE
+					</a>
+					<button class="btn btn-note">
+						COMMENT
+					</button>
+
+			</div>
+
+		</div>
+
+		<div class="feed">
+<p class="alert-secondary">
+				Anna upload a new <strong>photo</strong>
+			</p>
+			<img src="feed.jpg">
+			<br>
+			<p>
+				Our trip to the mountains was splendid, we clicked a lots of photos and we hope you were there.
+			</p>
+			<div class="btn btn-group-sm">
+					<button class="btn  btn-primary">
+						LIKE
+					</button>
+					<a class="btn btn-warning" href="share.html">
+						SHARE
+					</a>
+					<button class="btn btn-note">
+						COMMENT
+					</button>
+
+			</div>
+
+		</div>
+
+		<div class="feed">
+<p class="alert-secondary">
+				Jason updated his <strong>status</strong>
+			</p>
+			<img src="feed.jpg">
+			<br>
+			<p>
+				Our trip to the mountains was splendid, we clicked a lots of photos and we hope you were there.
+			</p>
+			<div class="btn btn-group-sm">
+					<button class="btn  btn-primary">
+						LIKE
+					</button>
+					<a class="btn btn-warning" href="share.html">
+						SHARE
+					</a>
+					<button class="btn btn-note">
+						COMMENT
+					</button>
+
+			</div>
+
+		</div>
+	</div>
+
+	<footer class="card-footer">
+		<p>
+			Copyright @india Skills.com all rights reserved.
+		</p>
+		<div>
+				<a class=" btn alert-warning" href="index.html" > LOG-OUT </a>
+		</div>
+	</footer>
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+style.css body {
+  text-align: center;
+  color: #00008B;
+  background-color: rgb(125, 147, 141);
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 18px;
+  scrollbar-face-color: antiquewhite;
+  scrollbar-highlight-color: darkorange;
+  scrollbar-3dlight-color: yellow;
+  scrollbar-darkshadow-color: black;
+  scrollbar-shadow-color: antiquewhite;
+  scrollbar-arrow-color: blue;
+  scrollbar-track-color: lightyellow;
+}
+
+p {
+  text-align: center;
+  background-color: rgb(125, 147, 141);
+}
+
+a {
+  text-decoration: underline;
+  color: #483D8B;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+a:hover {
+  color: #A52A2A;
+  background-color: #FAEBD7;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  color: #A52ACA;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 36px;
+}
+
+h2 {
+  color: #A52A2A;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+h3 {
+  color: #A52A2A;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+h4 {
+  color: #A52A2A;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+h5 {
+  color: #A52A2A;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 12px;
+}
+
+h6 {
+  color: #A52A2A;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 8px;
+}
+
+hr {
+  width: 90%;
+  height: 2px;
+  color: brown;
+  background-color: tan;
+}
+
+table {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  color: #00008B;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 18px;
+}
+
+.note {
+  color: purple;
+  font-family: Arial, Verdana, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}

@@ -1,0 +1,39 @@
+input {
+  margin-left: 10px;
+  padding-left: 10px;
+  width: 400px;
+  height: 100px;
+}
+
+img {
+  /* margin-top: 50px; */
+  height: 100px;
+  width: 100px;
+  margin-bottom: 0px;
+  /* margin-right: 40px; */
+}
+button {
+  margin-top: 50px;
+  width: 100px;
+  height: 100px;
+}
+a.one {
+  /* margin-left: 40px; */
+  border: medium solid rgb(233, 31, 31);
+  padding: 10px;
+}
+div.body {
+  /* display: inline-block; */
+  border: 20px inset rgb(196, 64, 78);
+  margin-right: 250px;
+  margin-left: 100px;
+  padding-left: 50px;
+  margin-bottom: 50px;
+}
+a.start {
+  border: medium solid rgba(32, 204, 215, 0.83);
+  padding: 10px;
+}
+iframe {
+  margin-right: 100px;
+}

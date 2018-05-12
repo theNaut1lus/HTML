@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body{
+	text-align:center;
+  background-color: rgb(167, 205, 232);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url(background.jpg);
+
+}
+button {
+  position: relative;
+  margin-top: 10px;
+  width: 50px;
+  height: 50px;
+}
+
+.box{
+	width:auto;
+	height:auto;
+
+	text-align:left;
+
+}
+
+h3{
+	position:relative;
+  font-family: 'Lato', sans-serif;
+
+
+	-webkit-animation:h3Animation 5s;
+
+}
+
+h1{
+	position:relative;
+  font-family: 'Lato', sans-serif;
+
+	-webkit-animation:h1Animation 5s;
+
+}
+
+h2{
+	position:relative;
+  font-family: 'Lato', sans-serif;
+
+	-webkit-animation:h2Animation 5s;
+
+}
+
+canvas{
+	position:relative;
+
+	-webkit-animation:canvasAnimation 5s;
+
+}
+
+@-webkit-keyframes canvasAnimation {
+
+	0%   {top:0px;left:0px; -webkit-transform:rotate(90deg);}
+
+}
+
+@-webkit-keyframes h1Animation {
+
+	0%   {-webkit-transform:rotate(0deg)}
+	25%   {-webkit-transform:rotate(90deg)}
+	50%  {-webkit-transform:rotate(180deg)}
+	75%  {-webkit-transform:rotate(270deg)}
+	100%  { -webkit-transform:rotate(360deg)}
+
+}
+
+@-webkit-keyframes h2Animation{
+
+	0%   {-webkit-transform: scale(1,2);}
+	25%   {-webkit-transform: scale(2,3);}
+	50%  {-webkit-transform: scale(3,4);}
+	75%  {-webkit-transform: scale(4,5);}
+	100%  { -webkit-transform: scale(0,0);}
+
+}
+@-webkit-keyframes h3Animation{
+
+	0%   {-webkit-transform: scale(0,0);}
+	50% {-webkit-transform: scale(0,0);}
+	100%  {-webkit-transform: scale(100,100);}
+
+}
