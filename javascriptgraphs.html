@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript Graphs</title>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="600" height="300"></canvas>
+
+
+    <script type="text/javascript">
+      var canvas = document.getElementById('myCanvas');
+      var ctx = canvas.getContext('2d');
+      var scores = [100, 90, 85, 45, 72, 80];
+      var width = 50;
+      var currX = 50;
+      var base = 100;
+
+      ctx.fillStyle = 'green';
+
+      for (var i=0;i<scores.length;i++)
+      {
+        var h = scores[i];
+        ctx.fillRect(currX, canvas.height - h, width, h);
+        currX += width + 10;
+
+      }
+
+    </script>
+  </body>
+</html>

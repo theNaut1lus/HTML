@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title></title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+</head>
+
+<body>
+  <hr>
+
+  <div id="app" class="alert-warning jumbotron container text-center">
+
+    {{message + " crazy day !"}}
+    <h1>{{ number + 120 }}</h1> {{ message.split('').reverse('').join('')}}
+
+    <h2> {{ isActive ? 'is Active' : 'Is not active' }}</h2>
+
+
+    <a href="url">{{url}}</a>
+
+    <h1 :data="dynamicID">{{dynamicID}}</h1>
+
+
+
+    <fieldset class="form-group">
+      <legend>Radio buttons</legend>
+      <div class="form-check">
+        <label class="form-check-label">
+                  <input v-model="options"  type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option-1" checked>
+                  Option one is this and that&mdash;be sure to include why it's great
+              </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+                  <input v-model="options"   type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option-2">
+                  Option two can be something else and selecting it will deselect option one
+              </label>
+      </div>
+      <div class="form-check">
+        <label class="form-check-label">
+                  <input v-model="options"   type="checkbox" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option-3">
+                  Option three is disabled
+              </label>
+      </div>
+    </fieldset>
+    <p class="alert alert-success"> You selected {{options.join(', ')}} </p>
+    <h1 v-on:click="number++"> CLICK1 </h1>
+    <h1 v-on:click="number--"> CLICK2 </h1> {{number}}
+
+    <div :style="{color: 'red', fontSize: fontSize + 'px'}">
+      {{ message }}
+    </div>
+
+    <div class="container" :style="styleObject">
+      {{ message }}
+    </div>
+
+    <div class="container jumbotron" :class="{'alert-success': isActive, 'alert-danger' : !isActive}">
+      {{ name }}
+    </div>
+    <div class="container jumbotron" :class="[isActive ? 'alert-danger' : 'alert-secondary']">
+      {{ name }}
+    </div>
+    <button class="btn btn-primary" @click="increaseFont"> Test </button>
+    <button class="btn btn-danger" @click="decreaseFont"> Test2 </button>
+    <div :style="{color: 'red', fontSize: fontSize + 'px'}">
+      {{ message }}
+    </div>
+
+    <h1 v-if="check"> {{name}} </h1>
+    <h1 v-else> NO USER </h1>
+
+    <hr>
+
+    <posts2></posts2>
+
+    <posts1 :data="34">
+
+    </posts1>
+    <hr>
+
+    <posts></posts>
+
+
+
+
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+
+  <script type="text/javascript">
+    Vue.component('posts2', {
+      template: `<h1>Hello mate</h1>`
+    });
+
+    Vue.component('posts1', {
+      props: ['data'],
+
+      template: `<h1 v-on:click="display"> {{data}} </h1>`,
+
+      data() {
+        return {
+          message: 'Hello Sidak'
+        }
+      },
+      methods: {
+        display() {
+          alert("hello");
+        }
+      }
+    });
+
+    Vue.component('posts', {
+      template: `
+
+          <div>
+            <ul>
+            <post v-for="post in posts" :key="post.id">{{post.title}}</post>
+            </ul>
+
+          </div>
+
+        `,
+      data() {
+
+        return {
+          posts: [{
+              id: 1,
+              title: 'Post 1'
+            },
+            {
+              id: 2,
+              title: 'Post 2'
+            },
+            {
+              id: 3,
+              title: 'Post 3'
+            },
+            {
+              id: 4,
+              title: 'Post 4'
+            },
+            {
+              id: 5,
+              title: 'Post 5'
+            },
+            {
+              id: 6,
+              title: 'Post 6'
+            },
+          ]
+        }
+      },
+    });
+
+    Vue.component('post', {
+
+      template: '<li><slot></slot></li>',
+
+    });
+
+
+
+
+
+
+
+    let vm = new Vue({
+      el: '#app',
+      data: {
+        message: 'Hello Everyone',
+        options: [],
+        number: 10,
+        isActive: false,
+        url: 'https://www.google.com',
+        dynamicID: 30,
+        fontSize: 100,
+        styleObject: {
+          color: 'blue',
+          fontSize: '50px'
+        },
+        isActive: true,
+        check: false,
+        name: 'Sidak',
+      },
+
+      methods: {
+        increaseFont() {
+          this.fontSize++;
+        },
+        decreaseFont() {
+          this.fontSize--;
+        },
+      }
+    })
+  </script>
+</body>
+
+</html>

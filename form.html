@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <form class="container" id="registerForm">
+      <fieldset class="form-group">
+        <label for="Username">Username</label>
+        <input type="text" class="form-control required" id="name" placeholder="Enter Username" minlength="4">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control required email" id="email" placeholder="Email">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="pass1">Password</label>
+        <input type="password" class="form-control required" id="pass1" placeholder="Password">
+      </fieldset>
+      <fieldset class="form-group">
+        <label for="pass2">Confirm Password</label>
+        <input type="password" class="form-control required" id="pass2" equalTo="#pass1" placeholder="Confirm Password" />
+      </fieldset>
+      <input type="submit" name="Submit" value="Submit">
+    </form>
+
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $("#registerForm").validate();
+      });
+    </script>
+  </body>
+</html>
